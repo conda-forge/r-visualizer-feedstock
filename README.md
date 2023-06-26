@@ -1,11 +1,11 @@
-About r-visualizer
-==================
+About r-visualizer-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-visualizer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/SantanderMetGroup/climate4R
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-visualizer-feedstock/blob/main/LICENSE.txt)
 
 Summary: Plotting methods for climate4R data visualization. Includes the implementation of several seasonal climate verification plots (See: <https://doi.org/10.1016/j.envsoft.2017.09.008>).
 
