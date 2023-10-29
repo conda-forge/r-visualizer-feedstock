@@ -1,4 +1,4 @@
-{% set version = "1.6.3" %}
+{% set version = "1.6.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/visualizeR/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: cf12e35e26bcd74f4b4961d716b313140acdbd68331cd4d655637b88af8baaa9
+  sha256: 82e0e0bc76bbbaa604a97c8253332328ef7734bdc95653801544028914275150
 
 build:
   merge_build_host: true  # [win]
