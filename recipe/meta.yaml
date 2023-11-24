@@ -42,7 +42,7 @@ requirements:
     - r-sp
     - r-verification
     - r-vioplot
-    - r-jpeg
+    - jpeg
     - r-transformer >=2.0.0
   run:
     - r-base
@@ -62,7 +62,7 @@ requirements:
     - r-sp
     - r-verification
     - r-vioplot
-    - r-jpeg
+    - jpeg
     - r-transformer >=2.0.0
 
 test:
