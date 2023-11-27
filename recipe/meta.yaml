@@ -42,8 +42,8 @@ requirements:
     - r-sp
     - r-verification
     - r-vioplot
-    {% if r_base == '4.1' %}
-    - jpeg
+    {% if r_base == '4.1' %} 
+    - jpeg # fixing following issue https://github.com/conda-forge/r-jpeg-feedstock/issues/13
     {% endif %}
     - r-transformer >=2.0.0
   run:
