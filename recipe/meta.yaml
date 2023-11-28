@@ -12,7 +12,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,9 +40,12 @@ requirements:
     - r-scales
     - r-sm
     - r-sp
-    - r-transformer
     - r-verification
     - r-vioplot
+    {% if r_base == '4.1' %} 
+    - jpeg # fixing following issue https://github.com/conda-forge/r-jpeg-feedstock/issues/13
+    {% endif %}
+    - r-transformer >=2.0.0
   run:
     - r-base
     - r-rcolorbrewer
@@ -59,9 +62,12 @@ requirements:
     - r-scales
     - r-sm
     - r-sp
-    - r-transformer >=2.0.0
     - r-verification
     - r-vioplot
+    {% if r_base == '4.1' %}
+    - jpeg
+    {% endif %}
+    - r-transformer >=2.0.0
 
 test:
   commands:
